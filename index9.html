@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidenavbar Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .sidenav {
+            width: 60px; 
+            background-color: #333;
+            transition: width 0.3s ease;
+            overflow: hidden;
+        }
+        .sidenav:hover {
+            width: 200px; 
+        }
+        .sidenav a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .sidenav a:hover {
+            background-color: #555;
+        }
+        .sidenav a i {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .sidenav a span {
+            display: none; 
+            white-space: nowrap;
+        }
+        .sidenav:hover a span {
+            display: inline;
+            font-size: 25px; 
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .home span{
+            background-color: green;
+        }
+        .profile span{
+           background-color: skyblue;
+        }
+        .setting span{
+           background-color: rgb(220, 73, 73);
+        }
+        .message span{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="#" class="home">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="profile">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </a>
+        <a href="#" class="setting">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+        </a>
+        <a href="#" class="message">
+            <i class="fas fa-envelope"></i>
+            <span>Messages</span>
+        </a>
+    </div>
+
+    <div class="content">
+        <h1>Hoverable Sidenav Buttons</h1>
+        <p>Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+
+</body>
+</html>

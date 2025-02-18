@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Shapes</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: white;
+        
+        }
+
+        table {
+            width: 70%;
+            height: 30%;
+            border-collapse: separate;
+            border-spacing: 5px; 
+            background-color: rgb(153, 221, 221);
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px; 
+            background-color: rgb(153, 221, 221);
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        .shape-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .shape {
+            width: 150px;
+            height: 90px;
+            border: 2px solid green;
+            border-radius: 10px;
+        }
+
+        .oval {
+            width: 150px;
+            height: 90px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="shape-container">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="oval shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+</body>
+</html>

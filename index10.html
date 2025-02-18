@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#d9da3e; 
+            color: #75203f; 
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #d9da3e; 
+            padding: 10px;
+        }
+        .sidebar a {
+            display: block;
+            background-color: #fff; 
+            color: #0000ff; 
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #000; 
+            text-align: center;
+            font-size: 18px;
+        }
+        .sidebar a:hover {
+            color: #800080; 
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: #d9da3e; 
+            margin-left: 20px;
+            position: relative; 
+        }
+        .content h1 {
+            margin-top: 0;
+        }
+        .content::after {
+            content: "";
+            display: block;
+            width: 100%;
+            border-top: 2px dotted #000; 
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #d9da3e; 
+        }
+        .footer p {
+            margin: 0;
+            color: #800080; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">Home page</a>
+            <a href="#">Musings</a>
+            <a href="#">My town</a>
+            <a href="#">Links</a>
+        </div>
+
+        <div class="content">
+            <h1>My first styled page</h1>
+            <p>Welcome to my styled page!</p>
+            <p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p>
+            <p>There should be more here, but I don't know what yet.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Made 18 February 2025</p>
+        <p>by myself.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .vertical-nav {
+            width: 200px;
+            background-color: #8ac3f3;
+            padding: 20px;
+            border-right: 1px solid #ccc; 
+        }
+        .vertical-nav a {
+            display: block;
+            color: #ffffff; 
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #102287; 
+            border-radius: 4px;
+            text-align: center;
+        }
+        .vertical-nav a:hover {
+            background-color: #d0d0d0; 
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .horizontal-nav {
+            background-color: #f4f4f4; 
+            padding: 10px;
+            display: flex;
+            justify-content: flex-end;
+            border-bottom: 1px solid #ccc; 
+        }
+        .horizontal-nav a {
+            color: #141212; 
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: #b5b0b0; 
+            border-radius: 4px;
+        }
+        .horizontal-nav a:hover {
+            background-color: #d0d0d0; 
+        }
+        .home a{
+            background-color: yellow;
+            color: #141212;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="horizontal-nav">
+        <a href="#">Home</a>
+        <a href="#">Java</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+    </div>
+
+    <div class="container">
+        <div class="vertical-nav"><div class="home">
+            <a href="#">Home</a>
+            </div>
+             <a href="#">Java</a>
+            <a href="#">CSS</a>
+            <a href="#">HTML</a>
+            <a href="#">Bootstrap</a>
+        </div>
+
+        <div class="content">
+        </div>
+    </div>
+
+</body>
+</html>
